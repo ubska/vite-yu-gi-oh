@@ -7,7 +7,7 @@ export default {
 
 <template>
     <div>
-        <img :src="info.card_images" :alt="info.name">
+        <img :src="info.card_images[0].image_url" :alt="info.name">
         <h4>{{ info.name }}</h4>
         <div>{{info.archetype}}</div>
     </div>
