@@ -1,10 +1,12 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
+import CharactersList from './components/CharactersList.vue'
 
 export default {
   name: 'App',
   components: {
     AppHeader,
+    CharactersList,
   }
 }
 </script>
@@ -13,7 +15,7 @@ export default {
  
   <AppHeader message="Yu-Gi-Ho"/>
   <main>
-    
+    <CharactersList/>
   </main>
 </template>
 
