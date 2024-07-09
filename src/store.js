@@ -1,5 +1,5 @@
 import { reactive } from "vue";
-import CharactersList from "./components/CharactersList.vue";
+import charactersList from './components/CharactersList.vue';
 
 export const store = reactive({
     charactersList: [],

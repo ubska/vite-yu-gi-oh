@@ -23,7 +23,8 @@ export default {
       axios.
         get(store.apiURl)
         .then(res => {
-          console.log(res);
+          console.log(res.data);
+          store.charactersList = res.data;
         })
         .catch(err => {
         console.log(err);

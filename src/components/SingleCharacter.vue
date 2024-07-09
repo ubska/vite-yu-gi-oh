@@ -1,14 +1,15 @@
 <script>
 export default {
-    name: 'SingleCharacter'
+    name: 'SingleCharacter',
+    props: ['info'],
 }
 </script>
 
 <template>
     <div>
-        <img src="https://i0.wp.com/giornalinocorbino.altervista.org/wp-content/uploads/2020/02/1_d5g31wvUpmILqzge216Fug-1.png?resize=840%2C939" alt="testo alternativo">
-        <h4>Nome card</h4>
-        <div>Status card</div>
+        <img :src="info.card_images" :alt="info.name">
+        <h4>{{ info.name }}</h4>
+        <div>{{info.archetype}}</div>
     </div>
 </template>
 
