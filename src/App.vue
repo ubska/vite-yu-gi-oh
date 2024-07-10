@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import AppHeader from './components/AppHeader.vue'
 import CharactersList from './components/CharactersList.vue'
+import AppSearch from './components/AppSearch.vue';
 // import store
 import { store } from './store';
 
@@ -12,6 +13,7 @@ export default {
   components: {
     AppHeader,
     CharactersList,
+    AppSearch,
   },
   data() {
     return {
@@ -41,6 +43,7 @@ export default {
  
   <AppHeader message="Yu-Gi-Ho"/>
   <main>
+    <AppSearch @filter_archetype="getCardsList"/>
     <CharactersList/>
   </main>
 </template>
